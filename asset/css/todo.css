@@ -1,0 +1,287 @@
+@import url('variable.css');
+
+*,::before,::after{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	transition:0.5s linear;
+	font-family:monospace;
+}
+
+:root{
+	--bg:#0a0f0f;
+	--main: #00264d;
+	--top: #004080;
+	--txt-clr: #ffffff;
+	
+}
+
+body{
+	background:var(--bg);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height:100vh;
+}
+
+.app-start{
+	width:500px;
+	height:90vh;
+	border-radius:10px;
+	padding:5px;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-direction:column;
+	background:var(--main);
+}
+
+.tpside{
+	width:100%;
+	height:35%;
+	background:var(--top);
+	border:2px dashed blue;
+}
+
+.mdleside{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	height:40px;
+	gap:3px;
+	margin:5px 0;
+	width:100%;
+	box-shadow:0 0 3px rgba(255, 255, 255, .5);
+}
+
+.mdleside input{
+	width:90%;
+	height:100%;
+	background:transparent;
+	color:var(--txt-clr);
+	border:none;
+	outline:none;
+	font-size:18px;
+	padding:0 10px;
+}
+
+.mdleside input::placeholder{
+	color:var(--txt-clr);
+}
+
+.mdleside button{
+	width:25px;
+	height:25px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	border-radius:50%;
+	outline:none;
+	border:none;
+	cursor:pointer;
+	position:relative
+}
+
+.mdleside button:active{
+	transform:rotate(360deg);
+	
+}
+
+.contentside{
+	height:57%;
+	width:100%;
+	overflow:hidden;
+	overflow-y:auto;
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:15px;
+	flex-direction:column;
+}
+
+.contentside::-webkit-scrollbar{
+	width:10px;
+}
+
+.contentside::-webkit-scrollbar-thumb{
+	background:var(--top);
+	border-radius:10px;
+}
+
+.contentside .__xlx__{
+	display:flex;
+	align-items:center;
+	height:70px;
+	width:100%;
+	justify-content:space-between;
+	box-shadow:0 0 4px rgba(255, 255, 255, .4);
+}
+
+.fasFas svg{
+	font-size:1.5em;
+	color:gold;
+}
+
+.todoTxrWrap{
+	color:var(--txt-clr);
+	font-family:sans-serif;
+	height:100%;
+	width:80%;
+
+}
+
+.todoTxrWrap p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 3;
+	font-size:15px;
+    text-overflow: ellipsis;
+}
+
+.__to_check__{
+	accent-color:gold;
+	width:20px;
+	height:20px;
+}
+
+.markAscomplete{
+	color:gray !important;
+	text-decoration:line-through;
+	font-style:oblique;
+}
+
+.tpside h2{
+	text-align:center;
+	font-family:monospace;
+	color:gold;
+}
+
+.tpside 
+.screenDivider{
+	height:75%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	
+}
+
+.tpside 
+.screenDivider
+.screenBig{
+	width:70%;
+	height:100%;
+	display:flex;
+	align-items:flex-start;
+	justify-content:flex-end;
+	flex-direction:column;
+	padding:0 10px;
+}
+
+.tpside 
+.screenDivider
+.screenBig h3{
+	color:var(--txt-clr);
+	font-family:sans-serif;
+}
+
+.tpside 
+.screenDivider
+.screensmall{
+	width:30%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.counter{
+	width:100px;
+	height:100px;
+	background:var(--bg);
+	border-radius:50%;
+	display:flex;
+	align-items:center;
+	color:var(--txt-clr);
+	justify-content:center;
+}
+
+.ttlcomplete{
+	display:inline-block;
+	font-size:28px;
+	font-family:sans-serif;
+
+}
+
+.tsklen{
+	display:inline-block;
+	font-size:35px;
+	font-family:sans-serif;
+	color:gold;
+}
+
+.__hrx__{
+	width:100%;
+    height: 15px;
+    background: var(--bg);
+    border-radius: 10px;
+	padding:.25rem;
+}
+
+.__hrx__ .slidder{
+    width: 0;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: gold;
+}
+
+.app-start{
+	position:relative;
+}
+
+.notification{
+	width:300px;
+	height:100px;
+	padding: 4px;
+	position:absolute;
+	background:var(--bg);
+	border-radius:10px;
+	box-shadow:0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.ntficazion-wrap{
+	width:100%;
+	height:100%;
+	margin:0;
+	border-radius:10px;
+	background:var(--main)
+}
+
+.helloNotify{
+	margin:0 10px;
+	font-family:sans-serif;
+	color:var(--txt-clr);
+	font-weight:normal;
+	
+}
+
+.pushIn{
+	top:-150px;
+}
+
+.pushOut{
+	top:26px !important;
+}
+
+.editAction{
+	display:flex;
+	gap:8px;
+}
+
+.myp{
+	width: 80%;
+	height: 80%;
+	color: orange;
+}
